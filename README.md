@@ -28,13 +28,13 @@ Fullstack Web Development Batch 15, HariSenin
 
 ### Desktop View
 
+![Screenshot 2025-04-28 111300](https://github.com/user-attachments/assets/6a780d47-5dcf-49dc-bd8c-255c14736fbf)
+
 ![Screenshot 2025-04-28 111519](https://github.com/user-attachments/assets/c2b0fde6-33fb-4b5d-af2a-ee5c94e7d7d9)
 
 ![Screenshot 2025-04-28 111415](https://github.com/user-attachments/assets/ac5defc9-e348-4161-8b55-5699274586e8)
 
 ![Screenshot 2025-04-28 111354](https://github.com/user-attachments/assets/c1d75e09-fbbe-478e-9947-fe74227b316d)
-
-![Screenshot 2025-04-28 111300](https://github.com/user-attachments/assets/6a780d47-5dcf-49dc-bd8c-255c14736fbf)
 
 ### Tablet View
 
