@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill - Beranda</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="main-page">
+    <div class="navbar">
+        <img class="navbar-logo" src="images/logo.svg" alt="chill-logo">
+        <div class="navbar-link">
+            <a href="#">Series</a>
+            <a href="#">Film</a>
+            <a href="#">Daftar Saya</a>
+        </div>
+        <div class="profile-dropdown">
+            <div class="profile-toggle">
+                <img class="profile-avatar" src="images/avatar.svg" alt="avatar">
+                <img src="images/chevron-down.svg" alt="drop-down menu">
+            </div>
+            <div class="profile-menu">
+                <a href="#"><img src="images/user-icon.svg" alt="user button"> Profil Saya</a>
+                <a href="#"><img src="images/star-icon.svg" alt="premium button"> Ubah Premium</a>
+                <a href="login.html"><img src="images/exit-icon.svg" alt="exit button"> Keluar</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="hero-desc">
+            <div class="hero-text">
+                <h1>Duty After School</h1>
+                <p>Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
+            </div>
+            <div class="hero-nav-container">
+                <button class="hero-nav-button blue-button">Mulai</button>
+                <button class="hero-nav-button info-icon-button light-gray-button">Selengkapnya</button>
+                <div class="rating-button">18+</div>
+                <button class="hero-nav-button sound-button"></button>        
+            </div>
+        </div>
+    </div>
+    <div class="content-section">
+        <div class="gallery-wrapper" id="continue-contents">
+            <div class="gallery-container">
+                <h1 class="gallery-title">Melanjutkan Tonton Film</h1>
+                <div class="gallery-slider">
+                    <div class="gallery-contents">
+                        <div class="gallery-item">
+                            <img src="/images/posters/continue/dont-look-up.svg" alt="Don't Look Up">
+                            <div class="movie-info">
+                                <span class="movie-title">Don't Look Up</span>
+                                <span class="movie-rating">4.5/5</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/images/posters/continue/all-us-dead.svg" alt="All of Us are Dead">
+                            <div class="movie-info">
+                                <span class="movie-title">All of Us are Dead</span>
+                                <span class="movie-rating">4.2/5</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/images/posters/continue/blue-lock.svg" alt="Blue Lock">
+                            <div class="new-episode-badge">Episode Baru</div>
+                            <div class="movie-info">
+                                <span class="movie-title">Blue Lock</span>
+                                <span class="movie-rating">4.6/5</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/images/posters/continue/otto.svg" alt="A Man Called Otto">
+                            <div class="movie-info">
+                                <span class="movie-title">A Man Called Otto</span>
+                                <span class="movie-rating">4.4/5</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/images/posters/continue/avatar.svg" alt="Movie 5">
+                            <div class="movie-info">
+                                <span class="movie-title">Avatar</span>
+                                <span class="movie-rating">4.6/5</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/images/posters/continue/batman.svg" alt="Movie 5">
+                            <div class="movie-info">
+                                <span class="movie-title">Batman</span>
+                                <span class="movie-rating">4.5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="gallery-nav gallery-prev"><img src="/images/arrow-left.svg" alt="slide left"></button>
+            <button type="button" class="gallery-nav gallery-next"><img src="/images/arrow-right.svg" alt="slide right"></button>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="footer-container">
+            <!-- Left Section -->
+            <div class="left-section">
+                <img class="footer-logo" src="images/logo.svg" alt="chill-logo">
+                <p class="copyright">@<span id="copyright-year">2023</span> Chill All Rights Reserved.</p>
+            </div>
+            
+            <!-- Middle Section -->
+            <div class="middle-section">
+                <input type="checkbox" id="genre-toggle" class="toggle-checkbox">
+                <label for="genre-toggle" class="toggle-label">Genre</label>
+                <div class="footer-content" id="genre-content">
+                    <a href="#">Aksi</a>
+                    <a href="#">Anak-anak</a>
+                    <a href="#">Anime</a>
+                    <a href="#">Britania</a>
+                    <a href="#">Drama</a>
+                    <a href="#">Fantasi Ilmiah & Fantasi</a>
+                    <a href="#">Kejahatan</a>
+                    <a href="#">KDrama</a>
+                    <a href="#">Komedi</a>
+                    <a href="#">Petualangan</a>
+                    <a href="#">Perang</a>
+                    <a href="#">Romantis</a>
+                    <a href="#">Sains & Alam</a>
+                    <a href="#">Thriller</a>
+                </div>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="right-section">
+                <input type="checkbox" id="help-toggle" class="toggle-checkbox">
+                <label for="help-toggle" class="toggle-label">Bantuan</label>
+                <div class="footer-content" id="help-content">
+                    <a href="#">FAQ</a>
+                    <a href="#">Kontak Kami</a>
+                    <a href="#">Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // gallery template
+        function createGallery(galleryData) {
+            // Create the main gallery container
+            const galleryContainer = document.createElement('div');
+            galleryContainer.className = 'gallery-container';
+
+            // Add gallery title
+            const galleryTitle = document.createElement('h1');
+            galleryTitle.className = 'gallery-title';
+            galleryTitle.textContent = galleryData.title;
+            galleryContainer.appendChild(galleryTitle);
+
+            // Create gallery slider
+            const gallerySlider = document.createElement('div');
+            gallerySlider.className = 'gallery-slider';
+            galleryContainer.appendChild(gallerySlider);
+
+            // Create gallery contents
+            const galleryContents = document.createElement('div');
+            galleryContents.className = 'gallery-contents';
+            gallerySlider.appendChild(galleryContents);
+
+            // Gallery item template
+            function createGalleryItem(movie) {
+                // Create the main element
+                const poster = document.createElement('div');
+                poster.className = 'gallery-item';
+
+                // Create the image
+                const img = document.createElement('img');
+                img.src = movie.imgSrc;
+                img.alt = movie.altText;
+                poster.appendChild(img);
+
+                // Add new episode badge if needed
+                if (movie.hasNewEpisode) {
+                    const newEpisode = document.createElement('div');
+                    newEpisode.className = 'new-episode-badge';
+                    newEpisode.textContent = 'Episode Baru';
+                    poster.appendChild(newEpisode);
+                }
+
+                // Add top 10 badge if needed
+                if (movie.isTop10) {
+                    const top10 = document.createElement('div');
+                    top10.className = 'top-10-badge';
+                    top10.textContent = 'Top 10';
+                    poster.appendChild(top10);
+                }
+
+                // Create movie info container
+                const movieInfo = document.createElement('div');
+                movieInfo.className = 'movie-info';
+
+                // Add movie title if it exists
+                const movieTitle = document.createElement('span');
+                movieTitle.className = 'movie-title';
+                if (!movie.title) {
+                    movieTitle.classList.add('hidden');
+                }
+                movieTitle.textContent = movie.title;
+                movieInfo.appendChild(movieTitle);
+
+                // Add movie rating if it exists
+                const movieRating = document.createElement('span');
+                movieRating.className = 'movie-rating';
+                if (!movie.rating) {
+                    movieRating.classList.add('hidden');
+                }
+                movieRating.textContent = movie.rating;
+                movieInfo.appendChild(movieRating);
+
+                // Add movie info to poster
+                poster.appendChild(movieInfo);
+
+                return poster;
+            }
+
+            galleryData.movies.forEach((movie, index) => {
+                galleryContents.appendChild(createGalleryItem(movie));
+            });
+
+            // Add navigation buttons
+            const prevButton = document.createElement('button');
+            prevButton.className = 'gallery-nav gallery-prev';
+            prevButton.type = 'button';
+            prevButton.innerHTML = '';
+
+            const leftArrow = document.createElement('img');
+            leftArrow.src = '/images/arrow-left.svg';
+            leftArrow.alt = "slide left";
+            prevButton.appendChild(leftArrow);
+
+            const nextButton = document.createElement('button');
+            nextButton.className = 'gallery-nav gallery-next';
+            nextButton.type = 'button';
+            nextButton.innerHTML = '';
+
+            const rightArrow = document.createElement('img');
+            rightArrow.src = '/images/arrow-right.svg';
+            rightArrow.alt = "slide right";
+            nextButton.appendChild(rightArrow);
+            
+            // Create the wrapper container
+            const galleryWrapper = document.createElement('div');
+            galleryWrapper.className = 'gallery-wrapper';
+            galleryWrapper.appendChild(galleryContainer);
+            galleryWrapper.appendChild(prevButton);
+            galleryWrapper.appendChild(nextButton);
+
+            return galleryWrapper;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // adjust (C)year
+            const year = document.querySelector('#copyright-year');
+            year.innerHTML = new Date().getFullYear();
+
+            // generate content for gallery
+            const contentSection = document.querySelector('.content-section');
+
+            const topRatingData = {
+                title: "Top Rating Film dan Series Hari ini",
+                movies: [
+                    {
+                        imgSrc: "/images/posters/gallery/suzume.svg",
+                        altText: "suzume",
+                        hasNewEpisode: true,
+                        isTop10: true,
+                        title: "Suzume",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/jurassic.svg",
+                        altText: "jurassic world",
+                        hasNewEpisode: false,
+                        isTop10: false,
+                        title: "Jurassic World",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/sonic-2.svg",
+                        altText: "sonic 2",
+                        hasNewEpisode: true,
+                        isTop10: false,
+                        title: "Sonic 2",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/all-us-dead.svg",
+                        altText: "all of us dead",
+                        hasNewEpisode: false,
+                        isTop10: false,
+                        title: "All of Us Dead",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/big-hero-6.svg",
+                        altText: "big hero 6",
+                        hasNewEpisode: true,
+                        isTop10: false,
+                        title: "Big Hero 6",
+                        rating: ""
+                    }
+                ]
+            };
+
+            const trendingData = {
+                title: "Film Trending",
+                movies: [
+                    {
+                        imgSrc: "/images/posters/gallery/tom-war.svg",
+                        altText: "Tomorrow War",
+                        hasNewEpisode: false,
+                        isTop10: true,
+                        title: "The Tomorrow War",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/quantumania.svg",
+                        altText: "quantumania",
+                        hasNewEpisode: false,
+                        isTop10: true,
+                        title: "Quantumania",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/guard-galaxy.svg",
+                        altText: "guardian galaxy",
+                        hasNewEpisode: false,
+                        isTop10: true,
+                        title: "",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/otto.svg",
+                        altText: "otto",
+                        hasNewEpisode: false,
+                        isTop10: true,
+                        title: "",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/mermaid.svg",
+                        altText: "mermaid",
+                        hasNewEpisode: false,
+                        isTop10: true,
+                        title: "The Little Mermaid",
+                        rating: ""
+                    }
+                ]
+            };
+
+            const newReleaseData = {
+                title: "Rilis Baru",
+                movies: [
+                    {
+                        imgSrc: "/images/posters/gallery/mermaid.svg",
+                        altText: "mermaid",
+                        hasNewEpisode: false,
+                        isTop10: true,
+                        title: "The Little Mermaid",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/duty-after-school.svg",
+                        altText: "duty after school",
+                        hasNewEpisode: true,
+                        isTop10: false,
+                        title: "Duty after School",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/big-hero-6.svg",
+                        altText: "big hero 6",
+                        hasNewEpisode: false,
+                        isTop10: false,
+                        title: "",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/all-us-dead.svg",
+                        altText: "otto",
+                        hasNewEpisode: true,
+                        isTop10: false,
+                        title: "",
+                        rating: ""
+                    },
+                    {
+                        imgSrc: "/images/posters/gallery/missing.svg",
+                        altText: "missing",
+                        hasNewEpisode: false,
+                        isTop10: false,
+                        title: "The Little Mermaid",
+                        rating: ""
+                    }
+                ]
+            };
+
+            // Create and append galleries to the body
+            contentSection.appendChild(createGallery(topRatingData));
+            contentSection.appendChild(createGallery(trendingData));
+            contentSection.appendChild(createGallery(newReleaseData));
+        });
+    </script>
+</body>
+</html>
