@@ -165,25 +165,25 @@ hero
     overflow: hidden;
 }
 
-.hero-desc {
+.hero-content {
     position: absolute;
     bottom: var(--page-margin-x);
     left: var(--page-margin-x);
     right: var(--page-margin-x);
 }
 
-.hero-text {
+.hero-desc {
     max-width: 60%;
-    margin-bottom: 20px;
+    margin-bottom: calc(1.2 * var(--space-y));
 }
 
-.hero-text h1 {
+.hero-desc h1 {
     font-size: 1.8rem;
-    margin-bottom: 12px;
+    margin-bottom: calc(0.4 * var(--space-y));
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero-text p {
+.hero-desc p {
     font-size: 0.9rem;
     line-height: 1.5;
     color: var(--light-text);
@@ -576,7 +576,7 @@ footer-section
 @media (max-width: 768px) {
     :root {
         --page-margin-x: calc(var(--default-page-margin-x) * 0.8);
-        --hero-height: calc(var(--default-hero-height) * 0.8);
+        --hero-height: calc(var(--default-hero-height) * 0.7);
         --poster-width: calc(var(--default-poster-width) * 0.8);
         --poster-height: calc(var(--default-poster-height) * 0.8);
         --continue-poster-width: calc(var(--default-continue-poster-width) * 0.8);
@@ -597,11 +597,11 @@ footer-section
         gap: 0.8rem;
     }
 
-    .hero-text {
+    .hero-desc {
         max-width: 80%;
     }
     
-    .hero-text h1 {
+    .hero-desc h1 {
         font-size: 1.5rem;
     }
 
@@ -640,15 +640,15 @@ footer-section
         gap: 0.25rem;
     }
     
-    .hero-text {
+    .hero-desc {
         max-width: 100%;
     }
     
-    .hero-text h1 {
+    .hero-desc h1 {
         font-size: 1.3rem;
     }
     
-    .hero-text p {
+    .hero-desc p {
         font-size: 0.8rem;
     }
 
