@@ -125,18 +125,6 @@ main {
     opacity: 1.0;
 }
 
-#toggle-password {
-    display: none;
-}
-
-#toggle-password:checked ~ .password-input[type="password"] {
-    display: none;
-}
-
-#toggle-password:checked ~ .password-input[type="text"] {
-    display: block;
-}
-
 .password-input[type="text"] {
     display: none;
     position: absolute;
