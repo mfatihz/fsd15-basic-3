@@ -20,23 +20,23 @@
     color: var(--text);
 }
 
-.form-page {
+main {
     display: flex;
     /* align-items: center; */
     justify-content: center;
     min-height: 100vh;
-    padding: calc(5*var(--space-y)) 20px 20px;
+    padding: calc(2*var(--space-y)) 20px 20px;
     background: black;
 }
 
 #login-page {
-    background: url('../images/login-bg.svg') no-repeat center center fixed, black;
+    background: url('../images/background/login-bg.svg') no-repeat center center fixed, black;
     background-size: cover;
     position: relative;
 }
 
 #register-page {
-    background: url('../images/register-bg.svg') no-repeat center center fixed, black;
+    background: url('../images/background/register-bg.svg') no-repeat center center fixed, black;
     background-size: cover;
     position: relative;
 }
@@ -66,7 +66,7 @@
     margin: 0 auto var(--space-y);
 }
 
-.form-header h1 {
+.form-header h3 {
     color: var(--text);
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
@@ -205,7 +205,7 @@
     font-size: 0.9rem;
 }
 
-.form-login-google-btn {
+.form-google-btn {
     width: 100%;
     padding: 12px;
     margin: 12px 0;
@@ -223,7 +223,17 @@
     color: var(--text);
 }
 
-.form-login-google-btn:hover {
+.form-google-btn::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background:url('../images/icon/google-icon.svg') no-repeat center center;
+    background-size: contain;
+    margin-right: 4px;
+}
+
+.form-google-btn:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
@@ -237,8 +247,8 @@
         background: var(--dark-bg);
     }
     
-    #login-page,
+    /* #login-page,
     #register-page {
         background-image: none;
-    }
+    } */
 }

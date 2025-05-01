@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chill - Beranda</title>
+    <link rel="shortcut icon" href="images/icon/chill-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container" id="top-page">
+    <main id="main">
         <div class="navbar">
-            <img class="navbar-logo" src="images/logo.svg" alt="chill-logo">
+            <img class="navbar-logo" src="images/icon/logo.svg" alt="chill-logo">
             <div class="navbar-link">
                 <a href="#">Series</a>
                 <a href="#">Film</a>
@@ -17,13 +18,13 @@
             </div>
             <div class="profile-dropdown">
                 <div class="profile-toggle">
-                    <img class="profile-avatar" src="images/avatar.svg" alt="avatar">
-                    <img src="images/chevron-down.svg" alt="drop-down menu">
+                    <img class="profile-avatar" src="images/icon/avatar.svg" alt="avatar">
+                    <img src="images/icon/chevron-down.svg" alt="drop-down menu">
                 </div>
                 <div class="profile-menu">
-                    <a href="#"><img src="images/user-icon.svg" alt="user button"> Profil Saya</a>
-                    <a href="#"><img src="images/star-icon.svg" alt="premium button"> Ubah Premium</a>
-                    <a href="login.html"><img src="images/exit-icon.svg" alt="exit button"> Keluar</a>
+                    <a href="#"><img src="images/icon/user-icon.svg" alt="user button"> Profil Saya</a>
+                    <a href="#"><img src="images/icon/star-icon.svg" alt="premium button"> Ubah Premium</a>
+                    <a href="login.html"><img src="images/icon/exit-icon.svg" alt="exit button"> Keluar</a>
                 </div>
             </div>
         </div>
@@ -48,21 +49,21 @@
                     <div class="gallery-slider">
                         <div class="gallery-contents">
                             <div class="gallery-item">
-                                <img src="images/posters/continue/dont-look-up.svg" alt="Don't Look Up">
+                                <img src="images/gallery-landscape/dont-look-up.svg" alt="Don't Look Up">
                                 <div class="movie-info">
                                     <span class="movie-title">Don't Look Up</span>
                                     <span class="movie-rating">4.5/5</span>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/posters/continue/all-us-dead.svg" alt="all of us are dead">
+                                <img src="images/gallery-landscape/all-us-dead.svg" alt="all of us are dead">
                                 <div class="movie-info">
                                     <span class="movie-title">All of Us are Dead</span>
                                     <span class="movie-rating">4.2/5</span>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/posters/continue/blue-lock.svg" alt="blue lock">
+                                <img src="images/gallery-landscape/blue-lock.svg" alt="blue lock">
                                 <div class="new-episode-badge">Episode Baru</div>
                                 <div class="movie-info">
                                     <span class="movie-title">Blue Lock</span>
@@ -70,28 +71,28 @@
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/posters/continue/otto.svg" alt="a man called otto">
+                                <img src="images/gallery-landscape/otto.svg" alt="a man called otto">
                                 <div class="movie-info">
                                     <span class="movie-title">A Man Called Otto</span>
                                     <span class="movie-rating">4.4/5</span>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/posters/continue/avatar.svg" alt="avatar">
+                                <img src="images/gallery-landscape/avatar.svg" alt="avatar">
                                 <div class="movie-info">
                                     <span class="movie-title">Avatar</span>
                                     <span class="movie-rating">4.6/5</span>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/posters/continue/batman.svg" alt="batman">
+                                <img src="images/gallery-landscape/batman.svg" alt="batman">
                                 <div class="movie-info">
                                     <span class="movie-title">Batman</span>
                                     <span class="movie-rating">4.5/5</span>
                                 </div>
                             </div>
                             <div class="gallery-item">
-                                <img src="images/posters/continue/baymax.svg" alt="baymax">
+                                <img src="images/gallery-landscape/baymax.svg" alt="baymax">
                                 <div class="movie-info">
                                     <span class="movie-title">Baymax</span>
                                     <span class="movie-rating">4.2/5</span>
@@ -100,8 +101,8 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="gallery-nav gallery-prev"><img src="images/arrow-left.svg" alt="slide left"></button>
-                <button type="button" class="gallery-nav gallery-next"><img src="images/arrow-right.svg" alt="slide right"></button>
+                <button type="button" class="gallery-nav gallery-prev"><img src="images/icon/arrow-left.svg" alt="slide left"></button>
+                <button type="button" class="gallery-nav gallery-next"><img src="images/icon/arrow-right.svg" alt="slide right"></button>
             </div>
         </div>
     
@@ -109,7 +110,7 @@
             <div class="footer-container">
                 <!-- Left Section -->
                 <div class="left-section">
-                    <a href="#top-page"><img class="footer-logo" src="images/logo.svg" alt="chill-logo"></a>
+                    <a href="#main"><img class="footer-logo" src="images/icon/logo.svg" alt="chill-logo"></a>
                     <p class="copyright">@<span id="copyright-year">2023</span> Chill All Rights Reserved.</p>
                 </div>
                 
@@ -148,7 +149,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script>
         // gallery template
@@ -240,7 +241,7 @@
             prevButton.innerHTML = '';
 
             const leftArrow = document.createElement('img');
-            leftArrow.src = 'images/arrow-left.svg';
+            leftArrow.src = 'images/icon/arrow-left.svg';
             leftArrow.alt = "slide left";
             prevButton.appendChild(leftArrow);
 
@@ -250,7 +251,7 @@
             nextButton.innerHTML = '';
 
             const rightArrow = document.createElement('img');
-            rightArrow.src = 'images/arrow-right.svg';
+            rightArrow.src = 'images/icon/arrow-right.svg';
             rightArrow.alt = "slide right";
             nextButton.appendChild(rightArrow);
             
@@ -276,7 +277,7 @@
                 title: "Top Rating Film dan Series Hari ini",
                 movies: [
                     {
-                        imgSrc: "images/posters/gallery/suzume.svg",
+                        imgSrc: "images/gallery-portrait/suzume.svg",
                         altText: "suzume",
                         hasNewEpisode: true,
                         isTop10: true,
@@ -284,7 +285,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/jurassic.svg",
+                        imgSrc: "images/gallery-portrait/jurassic.svg",
                         altText: "jurassic world",
                         hasNewEpisode: false,
                         isTop10: false,
@@ -292,7 +293,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/sonic-2.svg",
+                        imgSrc: "images/gallery-portrait/sonic-2.svg",
                         altText: "sonic 2",
                         hasNewEpisode: true,
                         isTop10: false,
@@ -300,7 +301,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/all-us-dead.svg",
+                        imgSrc: "images/gallery-portrait/all-us-dead.svg",
                         altText: "all of us dead",
                         hasNewEpisode: false,
                         isTop10: false,
@@ -308,7 +309,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/big-hero-6.svg",
+                        imgSrc: "images/gallery-portrait/big-hero-6.svg",
                         altText: "big hero 6",
                         hasNewEpisode: true,
                         isTop10: false,
@@ -316,7 +317,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/otto.svg",
+                        imgSrc: "images/gallery-portrait/otto.svg",
                         altText: "otto",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -324,7 +325,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/quantumania.svg",
+                        imgSrc: "images/gallery-portrait/quantumania.svg",
                         altText: "quantumania",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -332,7 +333,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/mermaid.svg",
+                        imgSrc: "images/gallery-portrait/mermaid.svg",
                         altText: "mermaid",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -340,7 +341,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/guard-galaxy.svg",
+                        imgSrc: "images/gallery-portrait/guard-galaxy.svg",
                         altText: "guardian galaxy",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -354,7 +355,7 @@
                 title: "Film Trending",
                 movies: [
                     {
-                        imgSrc: "images/posters/gallery/tom-war.svg",
+                        imgSrc: "images/gallery-portrait/tom-war.svg",
                         altText: "Tomorrow War",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -362,7 +363,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/quantumania.svg",
+                        imgSrc: "images/gallery-portrait/quantumania.svg",
                         altText: "quantumania",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -370,7 +371,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/guard-galaxy.svg",
+                        imgSrc: "images/gallery-portrait/guard-galaxy.svg",
                         altText: "guardian galaxy",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -378,7 +379,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/otto.svg",
+                        imgSrc: "images/gallery-portrait/otto.svg",
                         altText: "otto",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -386,7 +387,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/mermaid.svg",
+                        imgSrc: "images/gallery-portrait/mermaid.svg",
                         altText: "mermaid",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -394,7 +395,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/quantumania.svg",
+                        imgSrc: "images/gallery-portrait/quantumania.svg",
                         altText: "quantumania",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -402,7 +403,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/suzume.svg",
+                        imgSrc: "images/gallery-portrait/suzume.svg",
                         altText: "suzume",
                         hasNewEpisode: true,
                         isTop10: true,
@@ -410,7 +411,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/sonic-2.svg",
+                        imgSrc: "images/gallery-portrait/sonic-2.svg",
                         altText: "sonic 2",
                         hasNewEpisode: true,
                         isTop10: false,
@@ -424,7 +425,7 @@
                 title: "Rilis Baru",
                 movies: [
                     {
-                        imgSrc: "images/posters/gallery/mermaid.svg",
+                        imgSrc: "images/gallery-portrait/mermaid.svg",
                         altText: "mermaid",
                         hasNewEpisode: false,
                         isTop10: true,
@@ -432,7 +433,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/duty-after-school.svg",
+                        imgSrc: "images/gallery-portrait/duty-after-school.svg",
                         altText: "duty after school",
                         hasNewEpisode: true,
                         isTop10: false,
@@ -440,7 +441,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/big-hero-6.svg",
+                        imgSrc: "images/gallery-portrait/big-hero-6.svg",
                         altText: "big hero 6",
                         hasNewEpisode: false,
                         isTop10: false,
@@ -448,7 +449,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/all-us-dead.svg",
+                        imgSrc: "images/gallery-portrait/all-us-dead.svg",
                         altText: "otto",
                         hasNewEpisode: true,
                         isTop10: false,
@@ -456,7 +457,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/missing.svg",
+                        imgSrc: "images/gallery-portrait/missing.svg",
                         altText: "missing",
                         hasNewEpisode: false,
                         isTop10: false,
@@ -464,7 +465,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/sonic-2.svg",
+                        imgSrc: "images/gallery-portrait/sonic-2.svg",
                         altText: "sonic 2",
                         hasNewEpisode: true,
                         isTop10: false,
@@ -472,7 +473,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/suzume.svg",
+                        imgSrc: "images/gallery-portrait/suzume.svg",
                         altText: "suzume",
                         hasNewEpisode: true,
                         isTop10: true,
@@ -480,7 +481,7 @@
                         rating: ""
                     },
                     {
-                        imgSrc: "images/posters/gallery/jurassic.svg",
+                        imgSrc: "images/gallery-portrait/jurassic.svg",
                         altText: "jurassic world",
                         hasNewEpisode: false,
                         isTop10: false,

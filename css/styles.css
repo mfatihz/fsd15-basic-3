@@ -156,7 +156,7 @@ hero
 /////////////////////////////////// */
 
 .hero-section {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../images/posters/duty-after-school.svg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../images/hero/duty-after-school.svg');
     height: var(--hero-height);
     background-position: center;
     background-repeat: no-repeat;
@@ -227,7 +227,7 @@ hero
     display: inline-block;
     width: 16px;
     height: 16px;
-    background:url('../images/info.svg') no-repeat center center;
+    background:url('../images/icon/info.svg') no-repeat center center;
     background-size: contain;
     margin-right: 8px;
 }
@@ -251,7 +251,7 @@ hero
 
 .sound-button {
     margin-left: auto;
-    background: url('../images/volume-off.svg') no-repeat center center, transparent;
+    background: url('../images/icon/volume-off.svg') no-repeat center center, transparent;
     background-size: 22px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     width: 36px;
@@ -677,7 +677,7 @@ footer-section
         display: inline-block;
         width: 16px;
         height: 16px;
-        background:url('../images/chevron-right.svg') no-repeat center center;
+        background:url('../images/icon/chevron-right.svg') no-repeat center center;
         background-size: contain;
         position: absolute;
         right: 0;
@@ -689,7 +689,7 @@ footer-section
         display: inline-block;
         width: 16px;
         height: 16px;
-        background:url('../images/chevron-down.svg') no-repeat center center;
+        background:url('../images/icon/chevron-down.svg') no-repeat center center;
         background-size: contain;
         position: absolute;
         right: 0;
