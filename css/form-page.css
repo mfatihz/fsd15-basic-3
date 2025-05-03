@@ -1,11 +1,11 @@
+/* Form Page Styles - Clean and Semantic */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
+    /* Color Variables */
     --primary: #3498db;
-    --secondary: #2c3e50;
     --text: #ecf0f1;
     --light-text: #aaa;
-    /* --dark-bg: rgba(44, 62, 80, 0.85); */
     --dark-bg: rgba(16, 23, 30, 0.85);
     --gray-btn: #95a5a6;
     --gray-btn-hover: #7f8c8d;
@@ -20,27 +20,29 @@
     color: var(--text);
 }
 
+/* Main Layout */
 main {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
-    min-height: 100vh;
-    padding: calc(2*var(--space-y)) 20px 20px;
+    align-items: center;
+    min-height: 100dvh;
+    min-width: 100vw;
     background: black;
+    padding: var(--space-y);
 }
 
+/* Page Specific Backgrounds */
 #login-page {
     background: url('../images/background/login-bg.svg') no-repeat center center fixed, black;
     background-size: cover;
-    position: relative;
 }
 
 #register-page {
     background: url('../images/background/register-bg.svg') no-repeat center center fixed, black;
     background-size: cover;
-    position: relative;
 }
 
+/* Form Container */
 .form-container {
     padding: 40px;
     background: var(--dark-bg);
@@ -50,24 +52,22 @@ main {
     height: fit-content;
     max-width: 400px;
     min-width: 300px;
-    color: var(--text);
-    /* position: relative; */
 }
 
+/* Form Header */
 .form-header {
     text-align: center;
     margin-bottom: var(--space-y);
 }
 
-.form-header .form-logo {
+.form-header img {
     max-width: 150px;
     height: auto;
     display: block;
     margin: 0 auto var(--space-y);
 }
 
-.form-header h3 {
-    color: var(--text);
+.form-header h1 {
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
 }
@@ -77,8 +77,9 @@ main {
     font-size: 0.95rem;
 }
 
+/* Form Elements */
 .form-group {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 
@@ -86,7 +87,6 @@ main {
     display: block;
     margin-bottom: 0.4rem;
     font-size: 0.9rem;
-    color: var(--text);
 }
 
 .form-group input {
@@ -96,7 +96,6 @@ main {
     border-radius: 24px;
     background-color: transparent;
     font-size: 0.9rem;
-    color: var(--text);
 }
 
 .form-group input:focus {
@@ -104,6 +103,7 @@ main {
     border-color: var(--primary);
 }
 
+/* Password Input Wrapper */
 .password-wrapper {
     position: relative;
 }
@@ -122,27 +122,23 @@ main {
 }
 
 .password-toggle:hover {
-    opacity: 1.0;
+    opacity: 1;
 }
 
-.password-input[type="text"] {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.password-toggle img {
+    display: block;
 }
 
 .password-input {
     padding-right: 40px !important;
 }
 
+/* Form Links */
 .form-links {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
     font-size: 0.9rem;
-    color: var(--light-text);
 }
 
 .form-links * {
@@ -160,34 +156,33 @@ main {
     text-decoration: underline;
 }
 
-.link-label {
-    margin-right: 4px;
-}
-
+/* Buttons */
 .form-submit {
     width: 100%;
     padding: 12px;
     margin: 12px 0;
     background: var(--primary);
-    color: var(--text);
     border: none;
     border-radius: 24px;
     font-size: 0.9rem;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: background 0.3s;
 }
 
 .form-submit:hover {
     background: #2980b9;
 }
 
+/* Separator */
 .form-login-separator {
     text-align: center;
     color: var(--light-text);
     position: relative;
     font-size: 0.9rem;
+    margin: 1rem 0;
 }
 
+/* Google Button */
 .form-google-btn {
     width: 100%;
     padding: 12px;
@@ -201,9 +196,8 @@ main {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    transition: all 0.3s;
+    transition: background 0.3s;
     text-decoration: none;
-    color: var(--text);
 }
 
 .form-google-btn::before {
@@ -211,7 +205,7 @@ main {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background:url('../images/icon/google-icon.svg') no-repeat center center;
+    background: url('../images/icon/google-icon.svg') no-repeat center center;
     background-size: contain;
 }
 
@@ -219,18 +213,13 @@ main {
     background: rgba(255, 255, 255, 0.2);
 }
 
+/* Responsive Design */
 @media screen and (max-width: 480px) {
-    .form-page {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
+    main {
         padding: var(--space-y);
-        background: var(--dark-bg);
     }
     
-    /* #login-page,
-    #register-page {
-        background-image: none;
-    } */
+    .form-container {
+        padding: 30px 20px;
+    }
 }

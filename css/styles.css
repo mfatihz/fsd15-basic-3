@@ -615,17 +615,64 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    :root {
+        --padding-x: 2rem;
+        --padding-y: 1.25rem;
+        --navbar-gap: 0.75rem;
+        --hero-height: 400px;
+        --poster-width: 95px;
+        --poster-height: 145px;
+        --gallery-y-gap: 1.25rem;
+        --continue-poster-width: 309px;
+        --continue-poster-height: 151px;
+        --poster-gap: 1rem;
+    }
+
+    header {
+        padding: 0.75rem 2rem;
+    }
+
+    nav {
+        gap: 0.75rem;
+    }
+
+    .logo {
+        margin-right: 0.5rem;
+    }
+
+    .nav-links {
+        gap: 0.75rem;
+    }
+    
+    .hero-desc {
+        max-width: 85%;
+        gap: 0.75rem;
+    }
+
+    .hero-desc h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-desc p {
+        font-size: 0.75rem;
+        line-height: 140%;
+    }
+
+    .hero-actions {
+        gap: 0.5rem;
+    }
+
     #genre-content {
         column-count: 2;
     }
 }
 
-@media (max-width: 45rem) {
+@media (max-width: 480px) {
     :root {
         --padding-x: 1.25rem;
         --padding-y: 1.25rem;
         --navbar-gap: 0.75rem;
-        --hero-height: calc(var(--default-hero-height) * 0.6);
+        --hero-height: 225px;
         --poster-width: 95px;
         --poster-height: 145px;
         --gallery-y-gap: 1.25rem;
@@ -642,14 +689,6 @@ footer {
     nav {
         gap: 0.75rem;
     }
-
-    /* #logo img:first-child {
-        display: none;
-    }
-    
-    #logo img:nth-child(2) {
-        display: block;
-    } */
 
     .logo {
         height: 0.875rem;
@@ -814,7 +853,7 @@ footer {
         position: absolute;
         right: 0;
         top: 50%;
-        transform: translateY(-50%); /* Center vertically */
+        transform: translateY(-50%);
         transition: transform 0.2s ease; /* Add smooth transition */
     }
     

@@ -9,45 +9,43 @@
 </head>
 <body>
     <main id="login-page">
-        <div class="form-container">
-            <div class="form-header">
-                <img src="images/icon/logo.svg" alt="chill-logo" class="form-logo">
-                <h3>Masuk</h3>
+        <section class="form-container">
+            <header class="form-header">
+                <img src="images/icon/chill-logo.svg" alt="Chill Logo">
+                <h1>Masuk</h1>
                 <p>Selamat datang kembali!</p>
-            </div>
+            </header>
             
             <form id="login-form" action="index.html" method="post">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Masukkan username">
+                    <input type="text" id="username" name="username" placeholder="Masukkan username">
                 </div>
     
                 <div class="form-group">
                     <label for="password">Kata Sandi</label>
-                    <!-- wrapper untuk mempermudah peletakan icon -->
                     <div class="password-wrapper">
                         <input type="password" id="password" class="password-input" placeholder="Masukkan kata sandi">
-                        <button type="button" class="password-toggle">
-                            <img src="images/icon/eye-off.svg" alt="Show password">
+                        <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                            <img src="images/icon/eye-off.svg" alt="">
                         </button>
                     </div>
                 </div>
+                
+                <button type="submit" class="form-submit">Masuk</button>
             </form>
     
             <div class="form-links">
-                <p><span class="link-label">Belum punya akun?</span><a href="register.html">Daftar</a></p>
+                <p><span>Belum punya akun?</span> <a href="register.html">Daftar</a></p>
                 <a href="#">Lupa kata sandi?</a>
             </div>
-    
-            <button type="submit" form="login-form" class="form-submit">Masuk</button>
             
-            <div class="form-login-separator">Atau</div>
+            <p class="form-login-separator">Atau</p>
     
-            <a href="#" class="form-google-btn" target="_blank">
+            <a href="#" class="form-google-btn">
                 Masuk dengan Google
             </a>
-    
-        </div>
+        </section>
     </main>    
 </body>
 </html>
