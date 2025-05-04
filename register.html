@@ -10,13 +10,16 @@
 <body>
     <main id="register-page">
         <section class="form-container">
-            <header class="form-header">
+            <section class="logo">
                 <img src="images/icon/chill-logo.svg" alt="Chill Logo">
+            </section>
+
+            <header class="form-header">
                 <h1>Daftar</h1>
                 <p>Selamat datang!</p>
             </header>
             
-            <form id="register-form" action="#" method="post">
+            <form id="register-form" action="#">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Masukkan username">
@@ -39,21 +42,19 @@
                         <button type="button" class="password-toggle" aria-label="Toggle password visibility">
                             <img src="images/icon/eye-off.svg" alt="">
                         </button>
-                    </div>  
+                    </div>
+                    <div class="form-links">
+                        <p><span>Sudah punya akun?</span> <a href="login.html">Masuk</a></p>
+                    </div>
                 </div>
-                
-                <button type="submit" class="form-submit">Daftar</button>
             </form>
-    
-            <div class="form-links">
-                <p><span>Sudah punya akun?</span> <a href="login.html">Masuk</a></p>
+            
+            <div class="buttons">
+                <button type="submit" form="register-form" class="form-submit">Daftar</button>
+                <p class="form-button-separator">Atau</p>
+            `<a href="#" class="form-google-btn">Daftar dengan Google</a>
             </div>
             
-            <p class="form-login-separator">Atau</p>
-    
-            <a href="#" class="form-google-btn">
-                Daftar dengan Google
-            </a>
         </section>
     </main>
 </body>

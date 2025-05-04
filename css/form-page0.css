@@ -9,18 +9,7 @@
     --dark-bg: rgba(16, 23, 30, 0.85);
     --gray-btn: #95a5a6;
     --gray-btn-hover: #7f8c8d;
-
-    --form-padding: 40px;
-    --space-y: 37px;
-    --header-space-y: 8px;
-    --form-input-space-y: 6px;
-    --button-space-y: 8px;
-
-    /* Font Variables */
-    --font-h3: 2rem;
-    --font-medium: 1rem;
-    --font-large: 1.125rem;
-    --font-caption-2: 0.625rem;
+    --space-y: 1.2rem;
 }
 
 * {
@@ -37,7 +26,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
-    min-width: 100%;
+    min-width: 100vw;
     background: black;
     padding: var(--space-y);
 }
@@ -45,74 +34,59 @@ main {
 /* Page Specific Backgrounds */
 #login-page {
     background: url('../images/background/login-bg.svg') no-repeat center center fixed, black;
-    background-size: auto;
-    background-attachment: fixed;
+    background-size: cover;
 }
 
 #register-page {
     background: url('../images/background/register-bg.svg') no-repeat center center fixed, black;
-    background-size: auto;
-    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* Form Container */
 .form-container {
-    padding: var(--form-padding);
+    padding: 40px;
     background: var(--dark-bg);
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
     height: fit-content;
-    width: 529px;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-y);
-}
-
-.logo {
-    width: auto;
-    height: 44px;
-    display: block;
-    margin: 0 auto;
+    max-width: 400px;
+    min-width: 300px;
 }
 
 /* Form Header */
 .form-header {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: var(--header-space-y);
+    margin-bottom: var(--space-y);
+}
+
+.form-header img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto var(--space-y);
 }
 
 .form-header h1 {
-    color: var(--text);
-    font-size: var(--font-h3);
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .form-header p {
     color: var(--light-text);
-    font-size: var(--font-medium);
+    font-size: 0.95rem;
 }
 
 /* Form Elements */
-form {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-y);
-}
-
 .form-group {
-    width: 100%;
+    margin-bottom: 1.5rem;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--form-input-space-y);
 }
 
 .form-group label {
     display: block;
-    font-size: var(--font-large);
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
 }
 
 .form-group input {
@@ -121,7 +95,7 @@ form {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 24px;
     background-color: transparent;
-    font-size: var(--font-medium);
+    font-size: 0.9rem;
 }
 
 .form-group input:focus {
@@ -132,7 +106,6 @@ form {
 /* Password Input Wrapper */
 .password-wrapper {
     position: relative;
-    width: 100%;
 }
 
 .password-toggle {
@@ -163,11 +136,9 @@ form {
 /* Form Links */
 .form-links {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 12px;
-    font-size: var(--font-medium);
+    margin: 20px 0;
+    font-size: 0.9rem;
 }
 
 .form-links * {
@@ -186,18 +157,14 @@ form {
 }
 
 /* Buttons */
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: var(--button-space-y);
-}
 .form-submit {
     width: 100%;
     padding: 12px;
+    margin: 12px 0;
     background: var(--primary);
     border: none;
     border-radius: 24px;
-    font-size: var(--font-medium);
+    font-size: 0.9rem;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -211,22 +178,24 @@ form {
     text-align: center;
     color: var(--light-text);
     position: relative;
-    font-size: var(--font-medium);
+    font-size: 0.9rem;
+    margin: 1rem 0;
 }
 
 /* Google Button */
 .form-google-btn {
     width: 100%;
     padding: 12px;
+    margin: 12px 0;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 24px;
-    font-size: var(--font-medium);
+    font-size: 0.9rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 8px;
     transition: background 0.3s;
     text-decoration: none;
 }
@@ -246,11 +215,11 @@ form {
 
 /* Responsive Design */
 @media screen and (max-width: 480px) {
-    :root {
-        --form-padding: 24px;
-        --space-y: 20px;
-        --header-space-y: 5px;
-        --form-input-space-y: 4px;
-        --button-space-y: 4px;
+    main {
+        padding: var(--space-y);
+    }
+    
+    .form-container {
+        padding: 30px 20px;
     }
 }
