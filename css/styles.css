@@ -243,10 +243,12 @@ nav {
 
 .hero-desc p {
     font-size: 1.175rem;
-    line-height: 1.5;
+    line-height: 1.4;
+    max-height: 20rem;
     color: var(--text);
     text-shadow: 0 1px 0.125rem rgba(0, 0, 0, 0.5);
     text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .hero-actions {
@@ -734,7 +736,10 @@ footer {
     
     .hero-desc p {
         font-size: 0.75rem;
-        line-height: 140%;
+        line-height: 1.4;
+        height: 4rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     .hero-actions {
