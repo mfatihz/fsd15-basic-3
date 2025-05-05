@@ -230,7 +230,7 @@ nav {
 }
 
 .hero-desc {
-    max-width: 60%;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -242,13 +242,23 @@ nav {
 }
 
 .hero-desc p {
+    --lh: 1.4rem;
+    --max-lines: 8;
+    line-height: var(--lh);
+    max-height: calc(var(--lh) * var(--max-lines));
     font-size: 1.175rem;
-    line-height: 1.4;
-    max-height: 20rem;
     color: var(--text);
     text-shadow: 0 1px 0.125rem rgba(0, 0, 0, 0.5);
-    text-overflow: ellipsis;
+
+    /* Source: Limit text length to n lines using CSS
+    https://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css
+    */
     overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: var(--max-lines);
+    line-clamp: var(--max-lines);
+    -webkit-box-orient: vertical;
 }
 
 .hero-actions {
@@ -658,8 +668,9 @@ footer {
     }
     
     .hero-desc p {
+        --lh: 1.4rem;
+        --max-lines: 5;
         font-size: 0.75rem;
-        line-height: 140%;
     }
 
     .hero-actions {
@@ -735,11 +746,9 @@ footer {
     }
     
     .hero-desc p {
+        --lh: 1.2rem;
+        --max-lines: 3;
         font-size: 0.75rem;
-        line-height: 1.4;
-        height: 4.375rem;
-        text-overflow: ellipsis;
-        overflow: hidden;
     }
 
     .hero-actions {
