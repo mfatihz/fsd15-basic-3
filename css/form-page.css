@@ -191,6 +191,7 @@ form {
     flex-direction: column;
     gap: var(--button-space-y);
 }
+
 .form-submit {
     width: 100%;
     padding: 12px;
@@ -207,7 +208,7 @@ form {
 }
 
 /* Separator */
-.form-login-separator {
+.form-button-separator {
     text-align: center;
     color: var(--light-text);
     position: relative;
@@ -252,5 +253,37 @@ form {
         --header-space-y: 5px;
         --form-input-space-y: 4px;
         --button-space-y: 4px;
+    }
+
+    .form-header h1 {
+        font-size: var(--font-large);
+    }
+
+    .form-header p {
+        font-size: var(--font-caption-2);
+    }
+
+    .form-group label {
+        font-size: var(--font-caption-2);
+    }
+
+    .form-group input {
+        font-size: var(--font-caption-2);
+    }
+
+    .form-links {
+        font-size: var(--font-caption-2);
+    }
+
+    .form-submit {
+        font-size: var(--font-caption-2);
+    }
+
+    .form-button-separator {
+        font-size: var(--font-caption-2);
+    }
+
+    .form-google-btn {
+        font-size: var(--font-caption-2);
     }
 }
