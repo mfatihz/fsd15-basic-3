@@ -31,8 +31,9 @@
     --shadow-hover: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
     
     --button-gallery-diameter: 2.75rem;
-    --button-gallery-offset: calc(var(--padding-y) + var(--poster-height) / 2);
-    --button-continue-gallery-offset: calc(var(--padding-y) + var(--continue-poster-height) / 2);
+    --button-gallery-y-offset: calc(var(--padding-y) + var(--poster-height) / 2);
+    --button-continue-gallery-y-offset: calc(var(--padding-y) + var(--continue-poster-height) / 2);
+    --button-gallery-x-offset: calc(var(--padding-x) - var(--button-gallery-diameter) / 2);
 }
 
 * {
@@ -503,7 +504,7 @@ figcaption span.hidden {
 .button-prev,
 .button-next {
     position: absolute;
-    bottom: var(--button-gallery-offset);
+    bottom: var(--button-gallery-y-offset);
     transform: translateY(50%);
     width: var(--button-gallery-diameter);
     height: var(--button-gallery-diameter);
@@ -520,7 +521,7 @@ figcaption span.hidden {
 
 #continue-gallery .button-prev,
 #continue-gallery .button-next {
-    bottom: var(--button-continue-gallery-offset);
+    bottom: var(--button-continue-gallery-y-offset);
 }
 
 .button-prev:hover,
@@ -530,11 +531,11 @@ figcaption span.hidden {
 }
 
 .button-prev {
-    left: calc(5rem - var(--button-gallery-diameter) / 2);
+    left: var(--button-gallery-x-offset);
 }
 
 .button-next {
-    right: calc(5rem - var(--button-gallery-diameter) / 2);
+    right: var(--button-gallery-x-offset);
 }
 
 /* Footer */
