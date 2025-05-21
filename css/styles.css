@@ -34,6 +34,9 @@
     --button-gallery-y-offset: calc(var(--padding-y) + var(--poster-height) / 2);
     --button-continue-gallery-y-offset: calc(var(--padding-y) + var(--continue-poster-height) / 2);
     --button-gallery-x-offset: calc(var(--padding-x) - var(--button-gallery-diameter) / 2);
+    
+    --lh: 1.4rem;
+    --max-lines: 8;
 }
 
 * {
@@ -242,8 +245,6 @@ nav {
 }
 
 .hero-desc p {
-    --lh: 1.4rem;
-    --max-lines: 8;
     line-height: var(--lh);
     max-height: calc(var(--lh) * var(--max-lines));
     font-size: 1.175rem;
@@ -640,6 +641,8 @@ footer {
         --continue-poster-width: 309px;
         --continue-poster-height: 151px;
         --poster-gap: 1rem;
+        --lh: 1.4rem;
+        --max-lines: 5;
     }
 
     header {
@@ -668,8 +671,6 @@ footer {
     }
     
     .hero-desc p {
-        --lh: 1.4rem;
-        --max-lines: 5;
         font-size: 0.75rem;
     }
 
@@ -694,6 +695,8 @@ footer {
         --continue-poster-width: 309px;
         --continue-poster-height: 151px;
         --poster-gap: 1rem;
+        --lh: 1.2rem;
+        --max-lines: 3;
     }
     
     /* navigation */
@@ -746,8 +749,6 @@ footer {
     }
     
     .hero-desc p {
-        --lh: 1.2rem;
-        --max-lines: 3;
         font-size: 0.75rem;
     }
 
